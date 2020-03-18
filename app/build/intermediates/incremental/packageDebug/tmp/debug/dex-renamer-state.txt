@@ -1,0 +1,4 @@
+#Sun Mar 31 00:58:06 IST 2019
+base.0=E\:\\Doodhbhandaar\\DoodhBhandaarAdmin-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex

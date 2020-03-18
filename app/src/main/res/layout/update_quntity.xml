@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2.5"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Add milk Quantity(Litres)"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        app:cardElevation="10dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:text="-"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:text="0"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:text="+"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/radio"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Paid"
+            android:id="@+id/paid"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="UnPaid"
+            android:id="@+id/unpaid"
+            android:checked="true"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/radio_CB"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Cow"
+            android:id="@+id/Cow"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Buffalo"
+            android:id="@+id/Buffalo"
+            android:checked="true"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</LinearLayout>

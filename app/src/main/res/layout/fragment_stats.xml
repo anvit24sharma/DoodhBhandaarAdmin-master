@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Stats">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Total Cost "
+           android:textSize="18dp"
+           android:layout_margin="8dp"
+           android:textStyle="bold"
+           android:id="@+id/text_due"/>
+
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/text_due"
+           android:id="@+id/due_paid"
+           android:layout_margin="8dp">
+       </Spinner>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=":"
+           android:textSize="18dp"
+           android:layout_margin="8dp"
+           android:layout_toRightOf="@+id/due_paid"
+           android:textStyle="bold"
+           android:id="@+id/text_symbol"/>
+
+       <Spinner
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/text_symbol"
+           android:id="@+id/month"
+           android:layout_margin="8dp">
+       </Spinner>
+
+       <!--<android.support.v7.widget.RecyclerView-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:layout_below="@+id/text_due"-->
+           <!--android:layout_margin="6dp"-->
+           <!--android:id="@+id/list_area_boy">-->
+
+       <!--</android.support.v7.widget.RecyclerView>-->
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Total : "
+           android:layout_margin="12dp"
+           android:textSize="18dp"
+           android:textStyle="bold"
+           android:id="@+id/text_total"
+           android:layout_below="@id/text_due"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/total_cost_due"
+           android:layout_margin="12dp"
+           android:layout_below="@id/text_due"
+           android:text="0 ₹"
+           android:textSize="20dp"
+           android:textColor="#ff0000"
+           android:layout_toRightOf="@+id/text_total"
+           />
+
+   </RelativeLayout>
+
+</FrameLayout>

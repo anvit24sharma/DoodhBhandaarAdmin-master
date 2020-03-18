@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/AmountPaid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:hint="Total Amount Paid"
+        android:inputType="number"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AmountPaid"
+        android:layout_margin="12dp"
+        android:id="@+id/MOP"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:id="@+id/cashrb"
+            android:text="Cash"
+            android:textSize="18dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/paytmrb"
+            android:text="Paytm"
+            android:textSize="18dp"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="PhonePe"
+            android:id="@+id/phoneperb"
+            android:textSize="18dp"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>
